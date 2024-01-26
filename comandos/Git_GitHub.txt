@@ -1,0 +1,103 @@
+Working Directory: é a árvore de diretorio dos arquivos (fonte) que você vê e edita.
+
+Staging Area: é oconjuneto de arquivos cujas mudanças serão incluidas na nova versão.
+
+Git directory/Repository: é onde o git armazena os metadados.
+____________________________________________________________________________________________________________
+<> Comandos Básico;
+
+* Criar pasta
+-> mkdir "nome_do_arquivo"
+
+* Criar arquivo
+-> touch "nome_do_arquivo"
+
+* Lista do conteúdo diretorio
+-> ls
+
+* Lista do conteúdo ocultos diretorio
+-> ls -a
+
+* Procurar pasta/arquivo
+-> cd "nome_do_diretorio/arquivo
+
+* Voltar para o anterior
+-> cd ..
+
+* Abrir bloco de notas
+-> notepad
+
+* Abrir VSCode
+-> code .
+
+* Limpa tela
+-> clear
+____________________________________________________________________________________________________________
+<> Comandos Git;
+
+* Configuração:
+	- git config -global user.name "nome"
+	- git config -global user.email "email"
+
+* Monitoramento de um projeto
+-> git init
+
+* Monitorar novo arquivo
+-> git add "nome_do_arquivo"
+
+* Monitoramento em mais de dois arquivos ao mesmo tempo
+-> git add -a
+
+* Armazena conteúdo, juntamente com uma mensagem do usuário
+-> git commit -m
+
+* Armazena conteúdo, mesmo não estando no stage/staging
+-> git commit -a -m
+
+* Estado de comados
+-> git status
+
+* Arquivos ignorados
+-> git status --ignored
+
+* Hitorico de commits
+-> git log | aperte "q" para sair do git log
+
+* Copiar arquivos/pastas
+-> cp "nome_do_arquivo"/"nome_da_pasta"
+
+* Mover arquivos/pastas
+-> mv "nome_do_arquivo"/"nome_da_pasta"
+
+* Criar branchs:
+	- criar -> git branch "nome"
+	- criar e entrar -> git checkout -b "nome"
+
+* Mudar de branch
+-> git checkout "nome_branch"
+
+* Retonar para o main
+-> git checkout main
+
+* Corrigir erro de arquivos adicionados no local errado
+-> git checkout "nome_do_arquivo"
+
+* Trazer arquivos
+-> git merge "nome_branch/main"
+____________________________________________________________________________________________________________
+<> Comados Git/GitHub;
+
+* Conectar arquivos local (maquina) com a nuvem(GItHub)
+git remote add origin "link"
+
+* Puxa arquivos da nuvem para o local (maquina)
+git pull remote "nome"
+
+* Usar somente o comado git pull
+git branch --set upstream-to=origin/"nome" main
+
+* Empurrar para a nuvem(GitHub)
+git push remote "name"
+
+* Clonar arquivos da nuvem(GitHub)
+git clone "link" 
