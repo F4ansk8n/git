@@ -85,7 +85,7 @@ ________________________________________________________________________________
 * Trazer arquivos
 -> git merge "nome_branch/main"
 ____________________________________________________________________________________________________________
-<> Comados Git/GitHub;
+<> Comados GitHub;
 
 * Conectar arquivos local (maquina) com a nuvem(GItHub)
 git remote add origin "link"
